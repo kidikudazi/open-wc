@@ -1,4 +1,4 @@
-import { expect } from 'chai';
+import { expect } from '@bundled-es-modules/chai';
 import { foo } from '../src/example';
 
 describe('foo()', () => {
