@@ -18,7 +18,7 @@ npm init @open-wc
 
 1. Install the required dependencies:
 ```bash
-npm i -D @open-wc/building-webpack webpack http-server webpack-dev-server
+npm i -D @open-wc/building-webpack webpack-cli http-server webpack-dev-server
 ```
 
 2. Create a file called `webpack.config.js` and pass in your app's js entry point and index.html.
@@ -32,7 +32,7 @@ const createDefaultConfig = require('@open-wc/building-webpack/modern-and-legacy
 // import createDefaultConfig from '@open-wc/building-webpack/modern-config';
 
 module.exports = createDefaultConfig({
-  input: path.resolve(__dirname, './src/index.html'),
+  input: resolve(__dirname, './src/index.html'),
 });
 ```
 
